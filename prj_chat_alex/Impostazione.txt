@@ -1,0 +1,48 @@
+*IMPOSTAZIONE GRAFICA E DB PRE-INSTALLAZIONE SOCKET*
+
+
+CONFIGURAZIONE(si apre solamente se è il primo avvio del programma) dimensioni bloccate e fisse
+finestra nella quale chiedo il nome utente(Entry, Pulsante)
+
+
+PRIMA SCHERMATA(se la configurazione è già stata eseguita questa è la prima schermata) dimensioni variabili ma con limite a 1/3 dello schermo
+menu per aggiunta contatti, rimozione, modifica e modifica del proprio profilo + menù contestuali sul contatto stesso(4 Menu, 1 Menu contestuale con 2 opzioni)
+elenco dei contatti selezionabili(una volta selezionato un contatto si aprirà una finestra o una TAB per la conversazione) (treeview)
+scrollbar per scorrere tutti i contatti
+
+
+CHAT(SENZA TAB)
+cambio finestra/creazione finestra {DA DECIDERE}
+Menu per modifica contatto, ?Blocca? e menu contestuale sui messaggi per eliminarli 
+interfaccia messaggi(messagebox[carica solo gli ultimi 20 messaggi]{MOMENTANEO}, entry, pulsante invio messaggi, pulsante tornare alla schermata contatti)
+
+
+CHAT(CON TAB)
+Menu per modifica contatto, ?Blocca? e menu contestuale sui messaggi per eliminarli 
+interfaccia messaggi(messagebox[carica solo gli ultimi 20 messaggi]{MOMENTANEO}, entry, pulsante invio messaggi, pulsante tornare alla schermata contatti)
+
+
+SCHERMATA AGGIUNGI CONTATTO(si apre solo quando viene premuto "aggiungi contatto" nel menu) dimensioni bloccate e fisse
+chiedo nome e IP(entry, entry, pulsante)
+
+
+SCHERMATA MODIFICA CONTATTO(si apre solo quando viene premuto "modifica contatto" nel menu) dimensioni bloccate e fisse
+SE NON MENU CONTESTUALE O NON DA TAB CONTATTO/FINESTRA CONTATTO
+	chiedo nome attuale(entry, pulsante)
+	SE LO TROVO chiedo nome desiderato(entry, pulsante) 
+	ALTRIMENTI avverto dell'errore e torno alla schermata(popo-up warning)
+ALTRIMENTI
+	chiedo nome desiderato(entry, pulsante)
+
+SCHERMATA ELIMINA CONTATTO(si apre solo quando viene premuto "elimina contatto" nel menu e non si sta usando un menù contestuale) dimensioni bloccate e fisse
+SE NON MENU CONTESTUALE
+	chiedo nome e IP(entry, entry, pulsante)
+	SE LO TROVO chiedo la conferma(pop-up ok annulla)
+	ALTRIMENTI avverto dell'errore e torno indietro (pop-up warning)
+ALTRIMENTI
+	chiedo conoferma(pop-up ok annulla)
+
+
+ELIMINA MESSAGGIO menu contestuale
+chiedo conferma(pop-up ok annulla)
+
